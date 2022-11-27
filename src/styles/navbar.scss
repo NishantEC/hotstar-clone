@@ -1,0 +1,107 @@
+nav {
+  z-index: 999999;
+  min-width: 100%;
+  background-color: #121926;
+  color: $text-color;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 0 10px;
+
+  .left-container,
+  .right-container {
+    display: flex;
+    column-gap: 1.25rem;
+  }
+
+  .right-container {
+  
+    .search-box {
+      position: relative;
+      input {
+        width: 240px;
+        height: 32px;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        color: $text-color;
+        font-size: 16px;
+        outline: 0;
+        padding: 0 28px 0 0px;
+        border-radius: 0;
+        background: none;
+        transition: all .5s ease-in-out;
+        &:focus{
+          width: 340px;
+          transition: all .1s ease-in-out;
+        }
+        &::placeholder {
+          font-size: 14px;
+          color: $text-color;
+        }
+      }
+     
+    }
+    img {
+      position: relative;
+      width: 18px;
+      height: 18px;
+      object-fit: cover;
+      margin-top: -3px;
+      right: 28px;
+    }
+    .subscribe {
+      color: #fff;
+      padding: 15px 18px 15px;
+      border-radius: 3px;
+      text-align: center;
+      text-transform: uppercase;
+      background: #1f80e0;
+      border: none;
+      outline-color: transparent;
+      position: relative;
+      outline: none;
+      font-size: 12px;
+      letter-spacing: 0.4px;
+      font-weight: 700;
+      height: 24px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+    }
+    p {
+      line-height: 30px;
+      font-weight: 500;
+      color: $text-color;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  }
+  .hamMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    span {
+      display: block;
+      width: 18px;
+    height: 2px;
+      background-color: $text-color;
+    }
+  }
+}
+
+
+@media only screen and (min-width: $tablet) {
+  nav {
+    padding: 0 50px;
+  }  
+}

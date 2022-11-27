@@ -1,0 +1,32 @@
+.footer{
+    background-color:#0c111b;
+    color:#dadada;
+    padding:32px 24px 25px;
+    .about-product{
+        .tags{
+            display:flex;
+            column-gap:10px;
+            flex-wrap: wrap;
+            p{
+                padding-top:10px;
+                margin-bottom:0px;
+                font-size: 12px;
+                line-height: 1.8;
+                font-weight: 400;
+            }
+        }
+        .copyright{
+            padding:11px 0px 20px 0px;
+            font-size: 12px;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+    }
+    .social{
+        display: flex;
+        justify-content: space-between;
+        color:rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

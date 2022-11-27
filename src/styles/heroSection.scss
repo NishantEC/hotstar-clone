@@ -1,0 +1,100 @@
+.hero-section-wrapper{
+    background-color: #030b17;
+    padding-top:5rem;
+    .inner-wrapper{
+        .show-content{
+            display: flex;
+            width:100%;
+            height:400px;
+            .description{
+                display:none;
+
+
+            }
+            .media{
+                img{
+                    width:100%;
+                    height:100%;
+                    object-fit: cover;
+                }
+               
+ 
+            }
+        }
+        .prev-next-buttons{
+            display:none;
+        }
+    }
+}
+
+@media only screen and (min-width: $tablet) {
+    .hero-section-wrapper{
+        padding-top:5rem;
+        width:100%;
+        .inner-wrapper{
+            width:96%;
+            margin:auto;
+            position:relative;
+            .show-content{
+                display: flex;
+                justify-content: space-between;
+                width:100%;
+                height:400px;
+                .description{
+                    display:block;
+                    width:36%;
+                    display:flex;
+                    flex-direction: column;
+                    row-gap:10px;
+                    margin-top:5%;
+                    margin-left:5%;
+                    .title{
+                        font-weight: 600;
+                        font-size: 1.5rem;
+                        color:$text-color;
+                    }
+        .subtitle{
+            font-size: 1rem;
+            font-weight: 400px;
+            color:rgba(255, 255, 255, 0.8);;
+            
+
+        }
+        .about{
+            font-size: 1rem;
+            overflow-wrap: break-word;
+            color:rgba(255, 255, 255, 0.8);
+            line-height: 1.71;
+        }
+    
+                }
+                .media{
+                    img{
+                        width:100%;
+                        height:100%;
+                        object-fit: cover;
+                    }
+                    
+     
+                }
+            }
+            .prev-next-buttons{
+                display:block;
+                position:absolute;
+                width:102%;
+                display:flex;
+                justify-content:space-between;
+                top:50%;
+                button{
+                    font-size:3rem;
+                    color:#fff;
+                    border:transparent;
+                    background-color: transparent;
+                }
+                
+
+            }
+        }
+    }
+       
+}
